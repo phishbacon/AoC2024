@@ -1,6 +1,6 @@
-import { readTextFile } from "./utils.ts";
+import { ReadTextFile } from "./utils.ts";
 
-const input: string = await readTextFile();
+const input: string = await ReadTextFile();
 const reports: Array<Array<number>> = input.split("\n").map((a) => a.split(" ").map((aa) => parseInt(aa)));
 
 let safeReports: number = reports.reduce((acc, e) => (isReportSafe(e) ? acc + 1 : acc), 0);

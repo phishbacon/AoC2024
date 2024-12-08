@@ -1,6 +1,6 @@
-import { readTextFile } from "./utils.ts";
+import { ReadTextFile } from "./utils.ts";
 
-const input: string = await readTextFile();
+const input: string = await ReadTextFile();
 
 const [...match]: Array<RegExpExecArray> = Array.from(input.matchAll(/(don't\(\))|(do\(\))|(mul\(\d+,\d+\))/g));
 const [...matchMul]: Array<RegExpExecArray> = Array.from(input.matchAll(/mul\(\d+,\d+\)/g));

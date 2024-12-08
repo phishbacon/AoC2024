@@ -1,6 +1,6 @@
-import { readTextFile } from "./utils.ts";
+import { ReadTextFile } from "./utils.ts";
 
-const input: string = await readTextFile();
+const input: string = await ReadTextFile();
 const inputLetterArray: Array<string> = input.split("\n");
 
 function horizontal(arr: Array<string>, row: number, col: number): number {

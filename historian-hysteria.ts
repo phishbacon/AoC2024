@@ -1,6 +1,6 @@
-import { readTextFile } from "./utils.ts";
+import { ReadTextFile } from "./utils.ts";
 
-const input: string = await readTextFile();
+const input: string = await ReadTextFile();
 
 const inputStringArray: Array<string> = input.split(/\s+/);
 const inputNumberArray: Array<number> = inputStringArray.map(str => parseInt(str));

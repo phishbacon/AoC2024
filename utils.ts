@@ -1,4 +1,4 @@
-export function readTextFile(): Promise<string> {
+export function ReadTextFile(): Promise<string> {
   const error: Error = new Error();
   const stackLines: Array<string> = (error.stack ?? "").split("\n");
   const callerLine: string = stackLines[stackLines.length - 1] ?? "";
